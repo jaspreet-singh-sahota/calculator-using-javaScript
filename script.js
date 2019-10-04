@@ -131,26 +131,26 @@ document.addEventListener('keydown', function(event) {
         case '9':
         case '.':
             calculator.concatNumber(event.key);
-			calculator.updateDisplay()
+	    calculator.updateDisplay()
             break;
         case '+':
         case '-':
         case '*':
         case '/':
         	calculator.operatorSelected(event.key);
-			calculator.updateDisplay()
+		calculator.updateDisplay()
             break;
         case 'Enter':
            	calculator.compute();
-			calculator.updateDisplay()
+		calculator.updateDisplay()
             break;
         case 'clear':
        		calculator.clear();
-			calculator.updateDisplay()
+		calculator.updateDisplay()
         	break
         case 'Backspace':
            	calculator.backspace();
-			calculator.updateDisplay()
+		calculator.updateDisplay()
             break;
     }
 });
